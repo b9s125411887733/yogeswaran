@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Gadgets Store</title>
+</head>
+
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #00ff00;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #00ff00;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+.gadget-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gadget {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gadget:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+</style>
+<body>
+    <header>
+        <h1>Hacking Gadgets Store</h1>
+        <nav>
+            <a href="index4.html">Gadgets</a>
+            <a href="">Project</a>
+            <a href="index3.html">About Us</a>
+        </nav>
+    </header>
+
+    <section id="gadgets">
+        <h2>Featured Gadgets</h2>
+        <div class="gadget-container" id="gadget-list"></div>
+    </section>
+
+    <section id="about">
+       
+        <p>Welcome to the Hacking Gadgets Store,</br> your one-stop for the coolest hacking gadgets!</p>
+    </section>
+
+    <script src="script.js"></script>
+    
+
+    <div class="container">
+        <div class="scene">
+            <div class="cube">
+                <div class="face front">
+                    <img src="https://via.placeholder.com/150/00ff00/FFFFFF/?text=Hacker" alt="Hacker Image">
+                </div>
+                <div class="face back" style="background-color: #00cc00;">MODE</div>
+                <div class="face left" style="background-color: #009900;">ACCESSING</div>
+                <div class="face right" style="background-color: #00ff00;">SYSTEM</div>
+                <div class="face top" style="background-color: #33cc33;">LOADING</div>
+                <div class="face bottom" style="background-color: #66ff66;">... 100%</div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+          * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    right: 0; /* Align to the right */
+    animation: move-in 2s forwards; /* Animation for entrance */
+}
+
+.scene {
+    width: 200px;
+    height: 200px;
+    perspective: 600px;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 255, 0, 0.8); /* Green background for other faces */
+    border: 1px solid #00cc00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0) rotateY(0);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes move-in {
+    0% {
+        transform: translateX(100%); /* Start off-screen */
+    }
+    100% {
+        transform: translateX(0); /* End in position */
+    }
+}
+    </style>
+
+</body>
+</html>
